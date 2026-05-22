@@ -14,9 +14,6 @@ Le pare-feu de bordure viendra dans un second temps. Cette première étape se c
 
 Pour rester abordable, l'accès et le datacenter restent en **L2**, et la distribution est en **L3**.
 
-<img width="1420" height="926" alt="image" src="https://github.com/user-attachments/assets/45215d46-fa41-4e95-928f-8940897b27c2" />
-
-
 > **Question 1 :** pourquoi avoir choisi des switches **L3** pour la distribution plutôt que des switches L2 + un routeur ? Donnez au moins deux raisons (performance, coût, complexité…).
 
 > **Question 2 :** pourquoi avoir demandé que les switches de distribution et les switches d'accès du datacenter soient **en paire** ? Qu'est-ce qu'on perd si on n'en met qu'un ?
@@ -57,6 +54,8 @@ Redondance à deux niveaux :
 - **Matériel + passerelle** : **HSRP** (propriétaire Cisco). L'équivalent standard est **VRRP** (RFC 5798), fonctionnellement très proche. HSRP utilise un **virtual IP** + **virtual MAC** partagés entre les deux switches, avec un actif et un standby.
 
 ### Topologie
+
+<img width="1420" height="926" alt="image" src="https://github.com/user-attachments/assets/45215d46-fa41-4e95-928f-8940897b27c2" />
 
 Voir le diagramme fourni. Récapitulatif des matériels et liens :
 
